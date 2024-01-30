@@ -16,11 +16,6 @@ body {
 img {
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-
-img :hover {
-  transform: scale(1.1);
 }
 
 main {
@@ -38,7 +33,7 @@ h1 {
   font-family: "Kalnia", serif;
   color: white;
   margin-top: 3%;
-  font-size: 5vw;
+  font-size: 5rem;
   margin-left: 15%;
 }
 
@@ -55,7 +50,7 @@ header {
   font-family: "Alegreya Sans SC", sans-serif;
   gap: 5rem;
   margin-top: 7%;
-  margin-left: -5%;
+  margin-left: -10%;
 }
 
 .menu a {
@@ -68,6 +63,10 @@ header {
 .menu a:hover {
   color: rgb(122, 107, 110);
   transition: 0.3s;
+}
+
+.no {
+  text-decoration: none;
 }
 
 /******** Produktliste ********/
@@ -86,8 +85,9 @@ h2 {
   font-family: "Alegreya Sans SC", sans-serif;
   color: white;
   text-align: center;
+  text-decoration: underline;
 
-  font-size: 4vw;
+  font-size: 4rem;
   margin-bottom: 3%;
 }
 
@@ -137,10 +137,10 @@ h5 {
   font-family: "Oswald", sans-serif;
   color: rgb(0, 0, 0);
   position: absolute;
-  font-size: 3vw;
-  padding-left: 11%;
-  padding-right: 11.6%;
-  padding-bottom: 35.5%;
+  font-size: 2vw;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 36%;
   background-color: rgba(255, 255, 255, 0.405);
 }
 
@@ -148,8 +148,12 @@ h5 {
   font-family: "Oswald", sans-serif;
   color: rgb(254, 243, 130);
   position: absolute;
-  font-size: 3vw;
-  margin-left: 12%;
+  font-size: 2vw;
+  margin-left: 13%;
+}
+
+.tekstud {
+  text-decoration: line-through;
 }
 
 .billede {
@@ -158,7 +162,15 @@ h5 {
 
 .udsolgt2 a:hover {
   text-decoration: line-through;
-  color: rgba(122, 107, 110, 0.3);
+  color: rgb(122, 107, 110);
+}
+
+.nypris {
+  margin-top: 1%;
+}
+
+.gammelpris {
+  text-decoration: line-through;
 }
 
 /******** kategorier ********/
@@ -168,11 +180,11 @@ h5 {
   color: white;
   text-align: center;
   margin-top: 3%;
-  font-size: 4vw;
+  font-size: 4rem;
   margin-bottom: 3%;
   margin-left: 30%;
   margin-right: 30%;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 3%;
   z-index: 2;
 }
@@ -201,6 +213,86 @@ h5 {
   margin-left: 24%;
 }
 
+/******** product ********/
+
+.produkt_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.billede_produkt {
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+  padding: 2%;
+}
+
+.detaljer {
+  font-family: "Work Sans", sans-serif;
+  margin-left: 11.8%;
+  color: white;
+}
+
+.puma {
+  font-size: 2vw;
+}
+
+.dnbb {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3vw;
+}
+
+.pris {
+  text-align: end;
+  margin-right: 15%;
+  margin-top: -5%;
+  font-size: 2vw;
+  background-color: rgb(122, 107, 110);
+  margin-left: 70%;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.5%;
+}
+
+.size {
+  margin-right: 15%;
+  font-size: 1.5vw;
+  background-color: rgb(122, 107, 110);
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.5%;
+  margin-top: 5%;
+
+  text-align: center;
+}
+
+.add {
+  margin-right: 15%;
+  font-size: 1.5vw;
+  background-color: rgb(122, 107, 110);
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.5%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.gridbilleder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  background-color: white;
+  padding: 1%;
+  margin-top: 8%;
+  margin-left: 11.8%;
+  margin-right: 13.5%;
+}
+
+/* .grid_sizeadd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
 /******** Footer ********/
 
 footer {
@@ -208,6 +300,81 @@ footer {
   color: white;
   text-align: center;
   margin-top: 1%;
-  font-size: 1vw;
+  font-size: 1rem;
   margin-bottom: 1%;
+}
+
+/******** Burgermenu ********/
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 45px;
+  right: 25px;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #c9bfb2;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+    font-size: 1rem;
+  }
+
+  nav.active .menu a {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  nav.active .menu a:hover {
+    text-decoration: underline;
+  }
 }

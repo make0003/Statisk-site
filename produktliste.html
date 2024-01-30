@@ -18,6 +18,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
     </style>
+    <link rel="stylesheet" href="mobil.css">
+
 </head>
 
 <body>
@@ -31,151 +33,169 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="index.html">Forside</a>
+                    <a href="index.html">Front page</a>
                 </li>
                 <li>
-                    <a href="kategori.html">Kategorier</a>
+                    <a href="kategori.html">Categories</a>
                 </li>
                 <li>
-                    <a href="produktliste.html">Produktliste</a>
+                    <a href="produktliste.html">Product list</a>
                 </li>
                 <li>
-                    <a href="produkt.html">Produkt</a>
+                    <a href="produkt.html">Product</a>
                 </li>
 
             </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
 
     </header>
 
-    <h2>Produktliste</h2>
-    <div class="pil">
-        <a href="kategori.html"><img src="SVG/Asset4.svg" alt="pil"></a>
-    </div>
-    <div class="krudsedulle">
-        <img src="SVG/Asset1.svg" alt="krudsedulle">
-    </div>
+    <main>
+
+        <h2>Product list</h2>
+        <div class="pil">
+            <a href="kategori.html"><img src="SVG/Asset4.svg" alt="pil"></a>
+        </div>
+        <div class="krudsedulle">
+            <img src="SVG/Asset1.svg" alt="krudsedulle">
+        </div>
 
 
 
-    <div class="grid">
+        <div class="grid">
 
-        <article>
-            <div class="rabat">
+            <article>
+                <div class="rabat">
+                    <a href="produkt.html">
+                        <div class="rabat_tekst">
+                            <p>-24%</p>
+                        </div>
+                        <div class="billede">
+                            <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Billede af rygsæk">
+                        </div>
+                        <div class="tekst">
+                            <h3>Deck Navy Blue Backpack</h3>
+
+                            <h4>Puma</h4>
+                            <h5 class="gammelpris">895,-</h5>
+                            <h5 class="nypris">680,-</h5>
+
+
+
+                        </div>
+                    </a>
+                </div>
+
+            </article>
+            <article>
+                <div class="udsolgt2">
+                    <a href="produkt.html">
+                        <div class="udsolgt">
+                            <p>Sold out</p>
+                        </div>
+                        <div class="billede">
+                            <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Billede af rygsæk">
+                        </div>
+                        <div class="tekstud">
+                            <h3>Deck Navy Blue Backpack</h3>
+
+                            <h4>Puma</h4>
+                            <h5>895,-</h5>
+                        </div>
+                    </a>
+                </div>
+
+
+            </article>
+            <article>
                 <a href="produkt.html">
-                    <div class="rabat_tekst">
-                        <p>-24%</p>
-                    </div>
-                    <div class="billede">
-                        <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Billede af rygsæk">
-                    </div>
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
                     <div class="tekst">
+                        <h3>Tee</h3>
 
-                        <h3>Nike</h3>
-                        <h4>Deck Navy Blue Backpack</h4>
-                        <h5>895,-</h5>
-
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
                     </div>
                 </a>
-            </div>
 
-        </article>
-        <article>
-            <div class="udsolgt2">
+            </article>
+            <article>
                 <a href="produkt.html">
-                    <div class="udsolgt">
-                        <p>Udsolgt</p>
-                    </div>
-                    <div class="billede">
-                        <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Billede af rygsæk">
-                    </div>
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
                     <div class="tekst">
-                        <h3>Puma</h3>
-                        <h4>Deck Navy Blue Backpack</h4>
-                        <h5>895,-</h5>
+                        <h3>Tee</h3>
+
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
                     </div>
                 </a>
-            </div>
 
+            </article>
+            <article>
+                <a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
+                    <div class="tekst">
+                        <h3>Tee</h3>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
+                    </div>
+                </a>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+            </article>
+            <article>
+                <a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
+                    <div class="tekst">
+                        <h3>Tee</h3>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
+                    </div>
+                </a>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+            </article>
+            <article>
+                <a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
+                    <div class="tekst">
+                        <h3>Tee</h3>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
+                    </div>
+                </a>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+            </article>
+            <article>
+                <a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
+                    <div class="tekst">
+                        <h3>Tee</h3>
 
-        </article>
-        <article>
-            <a href="produkt.html">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
-                <div class="tekst">
-                    <h3>Puma</h3>
-                    <h4>Tee</h4>
-                    <h5>1899,-</h5>
-                </div>
-            </a>
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
+                    </div>
+                </a>
 
-        </article>
+            </article>
+            <article>
+                <a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Billede af rød trøje">
+                    <div class="tekst">
+                        <h3>Tee</h3>
+
+                        <h4>Puma</h4>
+                        <h5>1899,-</h5>
+                    </div>
+                </a>
+
+            </article>
 
 
 
@@ -183,11 +203,15 @@
 
 
 
-    </div>
+        </div>
+
+    </main>
 
     <footer>
         Lavet af Mathilde Schack Kempel
     </footer>
+    <script src="script.js"></script>
+
 
 
 

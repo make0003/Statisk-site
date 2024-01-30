@@ -12,6 +12,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
     </style>
+    <link rel="stylesheet" href="mobil.css">
+
 </head>
 
 <body>
@@ -26,35 +28,74 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="index.html">Forside</a>
+                    <a href="index.html">Front page</a>
                 </li>
                 <li>
-                    <a href="kategori.html">Kategorier</a>
+                    <a href="kategori.html">Categories</a>
                 </li>
                 <li>
-                    <a href="produktliste.html">Produktliste</a>
+                    <a href="produktliste.html">Product list</a>
                 </li>
                 <li>
-                    <a href="produkt.html">Produkt</a>
+                    <a href="produkt.html">Product</a>
                 </li>
 
             </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
 
     </header>
 
-    <h2>Produkt</h2>
     <main>
-        <article>
-            <h2>???</h2>
-            <img src="??" alt="???">
-            <div class="price">895</div>
-        </article>
+
+        <h2>Product</h2>
+
+        <div class="pil">
+            <a href="produktliste.html"><img src="SVG/Asset4.svg" alt="pil"></a>
+        </div>
+        <div class="krudsedulle">
+            <img src="SVG/Asset1.svg" alt="krudsedulle">
+        </div>
+
+        <div class="produkt_grid">
+            <div>
+                <div class="billede_produkt"><img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+                        alt="red tee"></div>
+            </div>
+
+            <div>
+
+                <h2 class="dnbb">Deck Navy Blue Backpack</h2>
+                <div class="detaljer">
+                    <p class="puma">Puma</p>
+                    <p class="pris">1299.-</p>
+                    <div class="grid_sizeadd">
+                        <p class="size">Size: XS, S, M, L, XL</p>
+                        <p class="add">Add to cart</p>
+                    </div>
+                </div>
+
+                <div class="gridbilleder">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="red tee">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="red tee">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="red tee">
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
     <footer>
-        Lavet af Mathilde Schack Kempel
+        Made by Mathilde Schack Kempel
     </footer>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
