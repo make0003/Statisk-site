@@ -99,6 +99,77 @@
   .pris_liste {
     margin-top: -20%;
   }
+
+  /*************** produkt *********************/
+
+  .produkt_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .detaljer {
+    font-family: "Work Sans", sans-serif;
+    margin-left: 11.8%;
+    color: white;
+  }
+
+  .puma {
+    font-size: 1.2rem;
+    margin-left: 5.7%;
+  }
+
+  .dnbb {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .pris {
+    text-align: end;
+    margin-right: 19%;
+    margin-top: -6%;
+    font-size: 1.2rem;
+    background-color: rgb(122, 107, 110);
+    margin-left: 65%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
+  }
+
+  .size {
+    margin-right: 15%;
+    font-size: 1.2rem;
+    background-color: rgb(122, 107, 110);
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
+    margin-top: 5%;
+
+    text-align: center;
+  }
+
+  .add {
+    margin-right: 15%;
+    font-size: 1.2rem;
+    background-color: rgb(122, 107, 110);
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .gridbilleder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    background-color: white;
+    padding: 1%;
+    margin-top: 8%;
+    margin-left: 11.8%;
+    margin-right: 13.5%;
+  }
   /*************** footer *********************/
 
   footer {

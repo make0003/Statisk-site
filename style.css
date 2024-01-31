@@ -114,7 +114,7 @@ article a {
 
 h5 {
   text-align: end;
-  margin-top: -8.5%;
+  margin-top: -10%;
   margin-right: 3%;
 }
 
@@ -362,6 +362,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
+    border-bottom: solid white;
   }
 
   nav.active .menu li {
