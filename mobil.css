@@ -18,6 +18,15 @@
 
   /*************** kategorier *********************/
 
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3%;
+  }
   .tegning_kate {
     display: none;
   }
@@ -32,7 +41,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-left: 2%;
     margin-right: 2%;
@@ -64,9 +73,10 @@
     color: rgb(0, 0, 0);
     position: absolute;
     font-size: 1.3rem;
-    padding-left: 16%;
-    padding-right: 15%;
-    padding-bottom: 53%;
+    padding-left: 40%;
+    padding-right: 37%;
+    padding-bottom: 115%;
+    padding-top: 5%;
     background-color: rgba(255, 255, 255, 0.405);
   }
 
@@ -75,7 +85,7 @@
     color: rgb(254, 243, 130);
     position: absolute;
     font-size: 1.3rem;
-    margin-left: 17%;
+    margin-left: 45%;
   }
 
   article a:hover {
