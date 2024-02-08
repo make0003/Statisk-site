@@ -1,3 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
 fetch("https://kea-alt-del.dk/t7/api/products?limit=100")
   .then((res) => res.json())
   .then(showProducts);

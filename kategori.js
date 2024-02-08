@@ -9,13 +9,13 @@ function showCategories(products) {
 
 function showCategory(product) {
   const template = document.querySelector(".categoryTemplate").content;
-
   const copy = template.cloneNode(true);
 
   //ændre indhold
 
   copy.querySelector(".kategorier").textContent = product.category;
   copy.querySelector(".kategorier2").textContent = product.category;
+  //   copy.querySelector("a").href = `produktliste.html?category=${product.category}`;
 
   document.querySelector("main").appendChild(copy);
 }
